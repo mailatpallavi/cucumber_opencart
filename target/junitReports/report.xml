@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="40.161" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Login Functionality for Opencart E-commerce Website" name="Successful login with valid credentials" time="6.018">
+<system-out><![CDATA[
+Given I am on the Opencart login page.......................................passed
+Given I have entered a valid username and password..........................passed
+When I click on the login button............................................passed
+Then I should be logged in successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality for Opencart E-commerce Website" name="Unsuccessful login with invalid credentials - Example #1.1" time="9.83">
+<system-out><![CDATA[
+Given I am on the Opencart login page.......................................passed
+Given I have entered invalid "abc" and "xxyz"...............................passed
+When I click on the login button............................................passed
+Then I should see error message indicating "Warning: No match for name and password".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality for Opencart E-commerce Website" name="Unsuccessful login with invalid credentials - Example #1.2" time="9.862">
+<system-out><![CDATA[
+Given I am on the Opencart login page.......................................passed
+Given I have entered invalid "c@gmail.com" and "abc"........................passed
+When I click on the login button............................................passed
+Then I should see error message indicating "Warning: No match for name and password".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality for Opencart E-commerce Website" name="Unsuccessful login with invalid credentials - Example #1.3" time="9.729">
+<system-out><![CDATA[
+Given I am on the Opencart login page.......................................passed
+Given I have entered invalid "wrong" and "iiid".............................passed
+When I click on the login button............................................passed
+Then I should see error message indicating "Warning: No match for name and password".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality for Opencart E-commerce Website" name="Navigating to the forgotten password page" time="4.569">
+<system-out><![CDATA[
+Given I am on the Opencart login page.......................................passed
+When I click on the Forgotten Password link.................................passed
+Then I should be redirected to the password reset page......................passed
+]]></system-out>
+</testcase>
+</testsuite>
